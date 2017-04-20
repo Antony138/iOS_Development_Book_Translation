@@ -128,6 +128,21 @@ func greeting(first: String, last: String) -> String {
     return "Hello \(first) \(last)"
 }
 
-//let strGreetingWithName = greeting(first: "Craig", last: "String")
+let strGreetingWithName = greeting(first: "Craig", last: "String")
+
+// Challenge 1
+func antonyGreeting(first: String, last: String) -> String {
+    return ("Well done! \(first) \(last). And Come on!")
+}
+
+let customGreeting = antonyGreeting(first: "Antony", last: "Wong")
+
+// Challenge 2
+func operate (number1: Int, number2: Int) -> Int {
+    return number1 / number2
+}
+
+let operateResult = operate(number1: 3, number2: 5)
+
 
 
