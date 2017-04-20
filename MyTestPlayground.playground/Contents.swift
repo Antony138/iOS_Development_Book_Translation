@@ -124,5 +124,10 @@ func greet(firstName: String, last: String) {
 // call funtion: greet()
 greet(firstName: "Craig", last: "Clayton")
 
+func greeting(first: String, last: String) -> String {
+    return "Hello \(first) \(last)"
+}
 
-		
+//let strGreetingWithName = greeting(first: "Craig", last: "String")
+
+
