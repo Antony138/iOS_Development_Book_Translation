@@ -1,6 +1,6 @@
 /// Collections
 
-// Arrays
+/// Arrays
 
 let arrOfInts: [Int] = []
 let arrStrings = [String]()
@@ -53,5 +53,21 @@ arrStates.removeFirst()
 arrStates.remove(at: 2)
 arrStates.remove(at: 4)
 arrStates.removeAll()
+
+
+
+/// Dictionaries
+let dictFirstExample = Dictionary<String, String>()
+
+let dictSecondExample = [String: Int]()
+
+var dictThirdExample = Dictionary<String, Double>(dictionaryLiteral: ("Veggie", 14.99), ("meat", 16.99))
+
+var dictPizzas = ["veggie": 14.99]
+
+
+
+
+
 
 
