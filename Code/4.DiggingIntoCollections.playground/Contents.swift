@@ -65,6 +65,22 @@ var dictThirdExample = Dictionary<String, Double>(dictionaryLiteral: ("Veggie", 
 
 var dictPizzas = ["veggie": 14.99]
 
+// Adding and updating dictionary elements
+dictPizzas["meat"] = 17.99
+dictPizzas["meat"] = 16.99
+
+// updateValue(_:forKey:)会返回旧值
+if let oldValue = dictPizzas.updateValue(15.99, forKey: "meat") {
+    print("old value \(oldValue)")
+}
+
+// Accessing an item in adictionary
+
+if let numChickenPrice = dictPizzas["chicken"] {
+    print(numChickenPrice)
+}
+
+
 
 
 
