@@ -80,10 +80,56 @@ if let numChickenPrice = dictPizzas["chicken"] {
     print(numChickenPrice)
 }
 
+// Iterating over dictionary values
+for value in dictPizzas.values {
+    print(value)
+}
+
+// Iterating over dictionary keys
+for key in dictPizzas.keys {
+    print(key)
+}
+
+// Iterating over dictionary keys and values
+for (key, value) in dictPizzas {
+    print("\(key): \(value)")
+}
+
+// Checking the number of items in a dictionary
+print("There are \(dictPizzas.count) total pizzas.")
+
+dictPizzas.removeValue(forKey: "meat") // Removing Items from a dictionary
+dictPizzas["veggie"] = nil
+
+if dictPizzas.isEmpty {
+    print("there are no pizzas")
+}
+else {
+    print("There are \(dictPizzas.count) total pizzas.")
+}
 
 
 
+/// Sets
+
+// Creating an empty set
+let movieSet = Set<String>()
+
+// Creating a set with an array literal
+let numberSet = Set<Int>([])
+
+// Creating a mutable set
+var craigsFavMovieSet = Set<String>([])
+
+var gabesFavMoviceSet = Set<String>(["Fight", "Matrix", "Evil Dead", "Big Trouble in Little China", "Aliens", "Winter Solider", "The Illusionist", "Predator"])
+
+// Adding items into a set
+
+gabesFavMoviceSet.insert("Terminator")
+gabesFavMoviceSet
+
+craigsFavMovieSet = ["The Pianist", "The Shawshank Redemption", "Dark Knight", "Black Swan", "Ip Man", "The Illusionist", "The Silence of the Lambs", "Winter Solider", "Green Mile", "Se7en"]
 
 
 
-
+		

@@ -1,6 +1,6 @@
 # My Summary
 
-##Chapter 2
+##Chapter 2 Building A Foundation With Swift
 
 - 可选类型和类型绑定(Optional Bingings，不知道翻译成类型绑定是否准确)
 
@@ -40,7 +40,7 @@ func operate (number1: Int, number2: Int) -> Int {
 let operateResult = operate(number1: 3, number2: 5)
 ```
 
-##Chapter 3
+##Chapter 3 Swift Digging Deeper
 
 - Range
 
@@ -82,4 +82,46 @@ repeat {
 } while x < 100
 print("repeat completed x: \(x)")// 还是会执行一次
 
+```
+
+##Chapter 4 Digging Into Collections
+
+- Array，Dictionary，Set都只能保存相同类型的元素。
+- 可变：var；不可变：let
+- Array中添加元素的简写方法：
+
+ ```
+arrStates += ["Texts", "Colorado"]
+```
+- 创建Dictionary的简写语法，也是用中括号。（区别与OC中用大括号```@{}```）
+
+ ```
+var dictPizzas = ["veggie": 14.99]
+```
+- 更新Dictionary中的值有两种方法
+ 
+ ```
+ // Method1:
+ dictPizzas["meat"] = 17.99
+ 
+ // Method2:会返回更新前的旧值
+ if let oldValue = dictPizzas.updateValue(15.99, forKey: "meat"){
+    	print("old value \(oldValue)")
+}
+```
+- Dictionary，可以分别单独对key或value进行遍历。
+
+- Set的创建
+
+ ```
+	// Creating an empty set
+	let movieSet = Set<String>()
+
+	// Creating a set with an array literal
+	let numberSet = Set<Int>([])
+
+	// Creating a mutable set
+	var craigsFavMovieSet = Set<String>([])
+
+	var gabesFavMoviceSet = Set<String>(["Fight", "Matrix", "Evil Dead", "Big Trouble in Little China", "Aliens", "Winter Solider", "The Illusionist", "Predator"])
 ```
