@@ -130,6 +130,29 @@ gabesFavMoviceSet
 
 craigsFavMovieSet = ["The Pianist", "The Shawshank Redemption", "Dark Knight", "Black Swan", "Ip Man", "The Illusionist", "The Silence of the Lambs", "Winter Solider", "Green Mile", "Se7en"]
 
+// Cheaking if a set contanins an item
+if craigsFavMovieSet.contains("Green Mile") {
+    print("Green Mile found")
+}
 
+// Iterating over a set
+for movie in gabesFavMoviceSet {
+    print("Gabe's movie - \(movie)")
+}
 
-		
+for movie in craigsFavMovieSet.sorted() {
+    print("Gabe's movie - \(movie)")
+}
+
+// Intersecting two sets
+craigsFavMovieSet.intersection(gabesFavMoviceSet)
+
+// Joining two sets
+craigsFavMovieSet.union(gabesFavMoviceSet)
+
+// Removing items from a Set
+craigsFavMovieSet.remove("Winter Solider")
+
+craigsFavMovieSet.removeAll()
+gabesFavMoviceSet = []
+
