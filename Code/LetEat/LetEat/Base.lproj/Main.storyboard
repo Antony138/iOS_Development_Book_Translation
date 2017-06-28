@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YbE-wZ-k7F">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MAP-->
+        <scene sceneID="ZoF-hA-b95">
+            <objects>
+                <viewController id="d6b-Ej-UeI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XOU-WU-vHS"/>
+                        <viewControllerLayoutGuide type="bottom" id="vNd-qs-G2K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WN8-YY-Oss">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MAP" image="icon-map-off" id="cQV-4y-6C6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fh7-La-jrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27" y="236"/>
+        </scene>
+        <!--EXPLORE-->
+        <scene sceneID="JII-U0-tpP">
+            <objects>
+                <viewController id="YOT-UA-gvX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FDq-qj-rBh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zta-MN-aDV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xRM-G9-ggh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="EXPLORE" image="icon-explore-on" id="qVa-JR-Aid"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WPZ-0P-Dza" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="-419"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4qz-Kw-aho">
+            <objects>
+                <tabBarController id="YbE-wZ-k7F" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6yB-Gb-zsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YOT-UA-gvX" kind="relationship" relationship="viewControllers" id="N9e-sl-JVo"/>
+                        <segue destination="d6b-Ej-UeI" kind="relationship" relationship="viewControllers" id="ChM-3N-MOp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IxF-Lw-c7B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-925" y="-92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-explore-on" width="35" height="23"/>
+        <image name="icon-map-off" width="16" height="22"/>
+    </resources>
+</document>
