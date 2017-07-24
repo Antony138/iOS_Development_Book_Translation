@@ -93,7 +93,7 @@
 				TargetAttributes = {
 					F4BFB8641F037EFD002A2DC8 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = H2VAN67H99;
+						DevelopmentTeam = 3VE476H8XH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -257,7 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = H2VAN67H99;
+				DEVELOPMENT_TEAM = 3VE476H8XH;
 				INFOPLIST_FILE = LetEat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -271,7 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = H2VAN67H99;
+				DEVELOPMENT_TEAM = 3VE476H8XH;
 				INFOPLIST_FILE = LetEat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -300,6 +300,7 @@
 				F4BFB8791F037EFD002A2DC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
